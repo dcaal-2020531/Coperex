@@ -38,12 +38,8 @@ const userSchema = new Schema({
         type: String,
         required: [true, 'Role is required'],
         uppercase: true,
-        enum: ['ADMIN', 'CLIENT'],
+        enum: ['ADMIN'],
         default:'CLIENT'
-    },
-    status: {
-        type: Boolean,
-        default: true
     }
 }
 )
